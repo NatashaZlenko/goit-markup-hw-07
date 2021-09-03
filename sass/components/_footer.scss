@@ -1,0 +1,106 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $heroBackgroudColor;
+  text-align: left;
+}
+.footer-content {
+  display: flex;
+  text-align: left;
+
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address {
+  margin-bottom: 9px;
+  color: $primaryBackgroundColor;
+  font-style: normal;
+}
+
+.footer-contacts {
+  .footer-contacts__link {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+  }
+
+  &__element {
+    margin-bottom: 9px;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.socnet-set {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primaryBackgroundColor;
+}
+
+.subscribe-form {
+  margin-left: 93px;
+}
+
+.subscribe-content {
+  display: flex;
+
+  &__input {
+    padding: 11px 12px;
+    margin: 0;
+    height: 50px;
+    width: 358px;
+
+    border: 1px solid $inputFooter;
+    border-radius: 4px;
+
+    background-color: $heroBackgroudColor;
+    color: $primaryBackgroundColor;
+
+    @extend %transition-border;
+  }
+
+  &__button {
+    @extend %flex-center;
+
+    padding: 10px 28px 10px 29px;
+    margin-left: 12px;
+    border: none;
+    border-radius: 4px;
+
+    background-color: $accentTextColor;
+
+    color: $primaryBackgroundColor;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: $primaryBackgroundColor;
+  }
+}

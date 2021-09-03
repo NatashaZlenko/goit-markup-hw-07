@@ -1,0 +1,11 @@
+.header {
+  border-bottom: 1px solid $headerBorger;
+}
+
+.page-header {
+  @extend %flex-center;
+}
+
+.site-nav {
+  @extend %flex-center;
+}

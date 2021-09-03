@@ -1,0 +1,21 @@
+.logo {
+  font-family: $secondaryFont;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &--blue {
+    color: $accentTextColor;
+  }
+  &--black {
+    color: $anotherTextColor;
+  }
+  &--white {
+    color: $primaryBackgroundColor;
+  }
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,42 @@
+.features-set {
+  display: flex;
+
+  &__title {
+    margin-bottom: 10px;
+    margin-top: 0;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $secondaryTextColor;
+  }
+
+  &__item {
+    margin-right: 30px;
+    width: 270px;
+    text-align: left;
+  }
+
+  &__item :last-child {
+    text-align: left;
+    padding-right: 0;
+  }
+  &__text {
+    line-height: 1.7;
+  }
+
+  &__icon-space {
+    @extend %flex-center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: $secondaryBackgroundColor;
+  }
+}

@@ -1,0 +1,48 @@
+.client-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    border: 1px solid $iconsMainColor;
+    border-radius: 4px;
+
+    @extend %transition-border;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    width: 170px;
+    height: 92px;
+
+    display: block;
+  }
+
+  &__logo {
+    max-width: 16px 32px;
+
+    margin: 16px 32px;
+
+    fill: $iconsMainColor;
+
+    @extend %transition-fill;
+  }
+
+  &__link:hover &__logo {
+    fill: $accentTextColor;
+  }
+
+  &__link:focus &__logo {
+    fill: $accentTextColor;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    border: 1px solid $accentTextColor;
+  }
+}
